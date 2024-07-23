@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { name } from '../constants';
-import { motion } from "framer-motion";
-import Background from './Background';
+// import { motion } from "framer-motion";
+// import Background from './Background';
 import Footer from './Footer';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
 				ref.current++;
 				setText(() => text + name[ref.current - 1]);
 			}
-		}, 500);
+		}, 300);
 		return () => clearInterval(interval);
 	}, [text]);
 
@@ -38,10 +38,10 @@ const Home = () => {
 				<div className='pt-4 h-36 backdrop-blur-sm rounded-3xl'>
 					<h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-yellow-200 font-extrabold'>{text}</span></h1>
 					<p className='mt-3 text-xl'>I love to learn and build scalable and optimized backend systems.</p>
-				</div>      
+				</div>
 			</div>
-			<Footer/>
-		</div>	
+			<Footer />
+		</div>
 	);
 }
 

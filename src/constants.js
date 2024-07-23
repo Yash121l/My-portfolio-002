@@ -14,32 +14,43 @@ export const services = [
     },
 ];
 
-export const name = 'Nithin';
+export const name = 'Yash Lunawat';
 
 export const experiences = [
     {
-        'company': 'Inncircles Technologies',
-        'role': 'Product Developer',
-        'duration': 'April 2023 - Present',
-        'logo': 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/e5gz1yggdy8sc1umna3e',
+        'company': 'E-Cell, Newton School of Technology and Rishihood University',
+        'role': 'President',
+        'duration': 'Jan 2024 - Apr 2024',
+        'logo': 'https://media.licdn.com/dms/image/D560BAQFQObHjWNDlOw/company-logo_100_100/0/1708708316908?e=1729728000&v=beta&t=0OeCA_D6ezeZ_nMRJrOhtcWflCwBCuWjfCG53BlYRdg',
         'points': [
-            'Involved in dynamic contributions to web and mobile📱 development projects, actively influencing and improving project outcomes.',
-            'Developed multiple shared components to simplify tasks for fellow developers, boosting efficiency and teamwork.',
-            'Enhanced product performance through significant contributions to backend development, optimizing essential components for improved efficiency 📈.',
-            'Implemented data security for the company’s product to provide role-based access control ⚙️.'
+            'Directed a team of 20 members, ensuring effective coordination and execution of all E-Cell activities',
+            'Organized and oversaw numerous events, including startup pitch competitions, hackathons, workshops, and guest lectures by industry experts.',
+            'Managed the E-Cell budget effectively, ensuring financial sustainability.',
+
+
         ],
-        'url': 'https://inncircles.com/#home',
     },
     {
-        'company': 'AT & T',
-        'role': 'Technical Intern',
-        'duration': 'Jan 2023 - March 2023',
-        'logo': 'https://www.att.com/ecms/dam/att/consumer/global/logos/att_globe_500x500.jpg',
+        'company': 'Neutron',
+        'role': 'Core Committee',
+        'duration': 'Jan 2024 - Apr 2024',
+        'logo': 'https://media.licdn.com/dms/image/D560BAQGtarqF4XxjCg/company-logo_100_100/0/1711718548850/neutronfest_logo?e=1729728000&v=beta&t=YbDHaaBVDkzUFCzN5B4E9Ts2H9mfXXVhduc3nubqYGw',
         'points': [
-            'Gained experience with Git version control contributing to the development and maintenance of code repositories.',
-            'Worked on the application dashboard, making it more user-friendly and improving its overall functionality📱.'
+            'Collaborated with fellow committee members to conceptualize and develop the overall theme, objectives, and structure of Neutron.',
+            'Assisted in the planning and organization of various events, workshops, and competitions encompassing both technological and cultural domains.',
+            'Actively contributed to marketing and promotional activities to generate buzz and attract participation from students, faculty, and external stakeholders.',
+            'Worked closely with the event management team to address any challenges or obstacles encountered during the planning and execution phases.',
+            'Engaged with participants and attendees to gather feedback and insights for future iterations of the fest, fostering a culture of continuous improvement and innovation.'
         ],
-        'url': 'https://www.att.com/',
+    },
+    {
+        'company': 'FrontRow',
+        'role': 'Operations Intern',
+        'duration': 'Sep 2021 - Mar 2022',
+        'logo': 'https://media.licdn.com/dms/image/C4D0BAQEiAUINJpwJ8w/company-logo_100_100/0/1630521254910/frontrow_in_logo?e=1729728000&v=beta&t=VZYTx5RYo0CnWElyOAHIqUCmEkcRrm7sklO2wrkQlNU',
+        'points': [
+            'As A Manager of Operations of E-Sport in Frontrow, my work is to Look After all the Operations in that department and also to present it at higher lever.',
+        ],
     },
 ]
 

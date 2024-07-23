@@ -1,18 +1,16 @@
 
 import React from "react";
-import vpn from '../assets/vpn.png'
-import copeople from '../assets/copeople.png'
+import password_Generator from '../assets/Password_Generator.png';
+import game_2048 from '../assets/2048_game.png';
+import Community_Website from '../assets/Community_Website.png';
 import Footer from './Footer'
 
-const ProjectCard = ({ image, title, description, git, technologies }) => {
+const ProjectCard = ({ image, title, description, git, technologies, site }) => {
     return (
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            {title=='Snap Shot' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={vpn} alt="" />
-            </a>}
-            {title=='Co People' && <a href="#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={copeople} alt="" />
-            </a>}
+            <a href={site}>
+                <img className="w-full rounded-t-lg h-auto object-cover " src={image} alt="" />
+            </a>
             <div className="p-4 sm:p-6">
                 <a href="#">
                     <h5 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">{title}</h5>
@@ -35,7 +33,7 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
         </div>
     );
 };
-  
+
 const Projects = () => {
     return (
         <div className="bg-black">
@@ -49,10 +47,11 @@ const Projects = () => {
                         links={item.links}
                         git={item.git}
                         technologies={item.technologies}
+                        site={item.site}
                     />
                 ))}
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
@@ -60,18 +59,28 @@ const Projects = () => {
 
 export const project = [
     {
-        title:'Co People',
-        description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
-        image: {vpn},
-        git:'https://github.com/nithingooud/CoPeople',
-        technologies:['MongoDb' ,'ReactJS' , 'NodeJS']
+        title: 'Community Engagement Website',
+        description: 'As part of my recent project, I developed a comprehensive Community Engagements website for College aimed at fostering connectivity and collaboration within the college community. This project showcases my skills in web development, community building, and user-centric design.',
+        image: `${ Community_Website }`,
+        git: 'https://github.com/Yash121l/Community-Engagement-website',
+        technologies: ['ReactJS', 'Tailwind CSS'],
+        site : 'https://city.rishihood.org/',
     },
     {
-        title:'Snap Shot',
-        description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
-        image: {copeople},
-        git:"https://github.com/nithingooud/vpn_studios",
-        technologies:[ 'React JS', 'tailwind CSS']
+        title: 'Password Generator',
+        description: 'The Password Generator is a JavaScript-based application designed to create strong and secure passwords quickly and easily. This tool is ideal for users who need to generate passwords for various accounts, ensuring that each password is unique and adheres to best security practices.',
+        image: `${ password_Generator }`,
+        git: 'https://github.com/Yash121l/Password_Generator',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        site : 'https://yash121l.github.io/Password_Generator/',
+    },
+    {
+        title: '2048 Game',
+        description: 'Welcome to the 2048 Game, a fun and addictive puzzle game that will challenge your strategic thinking! This game is built using HTML, CSS, and JavaScript, providing a smooth and interactive experience.',
+        image: `${ game_2048 }`,
+        git: "https://github.com/Yash121l/2024-game",
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        site : 'https://yash121l.github.io/2024-game/',
     }
 ]
 
